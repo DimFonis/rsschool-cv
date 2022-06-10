@@ -7,3 +7,9 @@
 ### email: *dima@gmail.com*
 
 ### discord: _DimFonis_
+
+# About Me:
+
+## **Definitely becoming a Web Developer.**
+
+## **I don't have finished projects yet.**
