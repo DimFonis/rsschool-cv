@@ -1,82 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dima CV</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="info">
-        <img src="img/IMG_2.jpg" alt="Моя Світлина" class="avatar" />
-        <div class="info-text">
-          <h1>Дмитрий Пластун</h1>
-          <p><strong>Web разработчик</strong></p>
-          <p>Я люблю путешевствовать, заниматься спортом и программировать</p>
-          <h4>Мои социальные сети</h4>
-          <a href="https://www.instagram.com" target="blank"> Инстаграмм </a>
-          |
-          <a href="https://www.facebook.com/" target="blank">Фейсбук</a>
-        </div>
-      </div>
-      <div class="card bg-yellow">
-        <h2>Мои хобби</h2>
-        <ol class="list">
-          <li>Летсплей</li>
-          <li>Езда на машине</li>
-          <li>Бег</li>
-          <li>Путешевствия</li>
-        </ol>
-      </div>
-      <div class="card bg-green">
-        <h2>Опыт работы</h2>
-        <table class="table">
-          <tr>
-            <td>Свет Шахтера</td>
-            <td>Инженет-конструктор</td>
-            <td>2016-2017</td>
-          </tr>
-          <tr>
-            <td>Новый Стиль</td>
-            <td>Инженет-конструктор</td>
-            <td>2017-2020</td>
-          </tr>
-          <tr>
-            <td>Art-fabric</td>
-            <td>Инженет-конструктор</td>
-            <td>2020-настоящее время</td>
-          </tr>
-        </table>
-      </div>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dmitriy Plastun CV</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
 
-      <div class="contact">
-        <h2>Связаться со мной</h2>
+</head>
 
-        <form action="/">
-          <div class="row">
-            <div class="form-group">
-              <label for="name">Ваше имя</label>
-              <input type="text" id="name" placeholder="Введите имя" />
-            </div>
+<body>
+	<div class="wrapper">
+		<!--Main container-->
+		<main class="main-container">
+			<!--Main content section-->
+			<div class="main-container-section">
+				<!--About me section-->
+				<header class="about-me-section">
+					<div class="nav-container">
+						<nav class="navigate">
+							<ul class="nav-list">
+								<li><a href="#about_me" class="nav-item">About</a></li>
+								<li><a href="#projects" class="nav-item">Projects</a></li>
+								<li><a href="#my_code" class="nav-item">Code</a></li>
+								<li><a href="#work_experience" class="nav-item">Work</a></li>
+								<li><a href="#education" class="nav-item">Education</a></li>
+								<li><a href="#contacts" class="nav-item">Contacts</a></li>
+							</ul>
+						</nav>
+					</div>
+					<h2 class="about-me-proffesion">Front-End developer</h2>
+					<h1 class="about-me-name">Dmitriy Plastun</h1>
 
-            <div class="form-group">
-              <label for="email">Ваша почта</label>
-              <input type="text" id="email" placeholder="Введите почту" />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="text">Ваше сообщение</label>
+					<h2 class="main-content-title" id="about_me">About me</h2>
+					<p class="about-me-description">
+						I like reading books, exercising and listening to music. I love cars and bikes. I lead an active and
+						healthy lifestyle. I like to work and see the results of my work.
+					</p>
+				</header>
 
-            <textarea id="text" cols="15" rows="2"></textarea>
-          </div>
+				<!--My projects section-->
+				<section class="my-projects-section" id="projects">
+					<h2 class="main-content-title">Projects</h2>
+					<ol class="my-projects-list">
+						<li class="my-projects-item">
+							<span class="my-projects-text">
+								<a href="https://dimfonis.github.io/rsschool-cv/cv" class="my-projects-link" target="_blank">#1
+									CV</a>
+								.......
+								<span class="my-projects-bracket">[</span> Markdown <span class="my-projects-bracket">]</span>
+							</span>
+						</li>
+						<li class="my-projects-item">
+							<span class="my-projects-text">
+								<a href="https://dimfonis.github.io/rsschool-cv/" class="my-projects-link" target="_blank">#2
+									CV</a>
+								......
+								<span class="my-projects-bracket">[</span> HTML5, CSS3 <span
+									class="my-projects-bracket">]</span>
+							</span>
+						</li>
+					</ol>
+				</section>
 
-          <input class="btn" type="submit" value="Связаться" />
-        </form>
-      </div>
-    </div>
-    <div style="margin-bottom: 100px"></div>
-  </body>
+				<!-- My code section-->
+				<section class="my-code-section" id="my_code">
+
+					<h2 class="my-code-title">My code</h2>
+					<code class="my-code-description">
+						function multiply(a, b){
+							return a * b
+						 }
+					</code>
+				</section>
+
+				<!--My work experience-->
+				<section class="my-work-experience-section" id="work_experience">
+					<h2 class="main-content-title">Work experience</h2>
+
+					<!--Company 3-->
+					<div class="my-work-experience-company-block">
+						<h4 class="my-work-experience-position">Engineer <span class="my-work-experience-company">"New
+								Style"</span></h4>
+						<p class="my-work-experience-period">August 2017—April 2020 <span class="my-work-experience-divider">
+								| </span> Ukraine</p>
+
+						<ul class="my-work-experience-duties">
+							<li class="my-work-experience-duty">- development of fixtures for furniture assembly</li>
+							<li class="my-work-experience-duty">- development of design documentation</li>
+							<li class="my-work-experience-duty">- participation in product assembly</li>
+							<li class="my-work-experience-duty">- modernization of existing equipment</li>
+						</ul>
+					</div>
+
+					<!--Company 2-->
+					<div class="my-work-experience-company-block">
+						<h4 class="my-work-experience-position">Engineer <span class="my-work-experience-company">"Light of
+								Miner"</span></h4>
+						<p class="my-work-experience-period">February 2017—April 2017 <span
+								class="my-work-experience-divider">|</span>Ukraine</p>
+
+						<ul class="my-work-experience-duties">
+							<li class="my-work-experience-duty">- development of parts for lamps and mining equipment</li>
+							<li class="my-work-experience-duty">- development of design documentation</li>
+							<li class="my-work-experience-duty">- participation in product assembly</li>
+						</ul>
+					</div>
+
+					<!--Company 1-->
+					<div class="my-work-experience-company-block">
+						<h4 class="my-work-experience-position">CNC machine tool adjuster <span
+								class="my-work-experience-company">"MashHydroDrive"</span></h4>
+						<p class="my-work-experience-period">September 2015—February 2017 <span
+								class="my-work-experience-divider"> | </span> Ukraine</p>
+
+						<ul class="my-work-experience-duties">
+							<li class="my-work-experience-duty">- adjustment and control of turning parts</li>
+							<li class="my-work-experience-duty">- creation of drawings, technical process and control program
+								for the manufacture of parts</li>
+						</ul>
+					</div>
+				</section>
+
+				<!--My Education-->
+				<section class="my-education" id="education">
+					<h2 class="main-content-title">Education</h2>
+					<h3> National Technical University
+						<br>
+						«Kharkiv Polytechnic Institute»
+					</h3>
+					<h4>Information Technology of Design</h4>
+					<p>September 2009—June 2014</p>
+				</section>
+			</div>
+
+			<!--Sidebar section-->
+			<aside class="sidebar-section">
+				<img src="img/IMG_2.jpg" alt="my photo" class="foto">
+
+				<!--contacts section-->
+				<section class="contacts-section" id="contacts">
+					<h2 class="sidebar-title">Contacts</h2>
+					<ul class="contacts-list">
+						<li class="contacts-item">
+							<span class="contacts-section-type">Discord:</span>
+							<span class="contacts-section-link">DimFonis(@DimFonis)#4756</span>
+						</li>
+						<li class="contacts-item">
+							<span class="contacts-section-type">Email:</span>
+							<a class="contacts-section-link" href="mailto:dimfonis@gmail.com">dimfonis@gmail.com</a>
+						</li>
+					</ul>
+				</section>
+
+				<!--tech skills section-->
+				<section class="tech-skills-section">
+					<h2 class="sidebar-title">Tech Skills</h2>
+					<ul class="tech-skills-list">
+						<li class="tech-skills-item"> <span class="tech-skills-item-text">HTML5</span></li>
+						<li class="tech-skills-item"> <span class="tech-skills-item-text">CSS3</span></li>
+						<li class="tech-skills-item"> <span class="tech-skills-item-text">GIT</span></li>
+						<li class="tech-skills-item"> <span class="tech-skills-item-text">JavaScript</span></li>
+						<li class="tech-skills-item"> <span class="tech-skills-item-text">React.js</span></li>
+						<li class="tech-skills-item"> <span class="tech-skills-item-text">Node.js</span></li>
+						<li class="tech-skills-item"> <span class="tech-skills-item-text">Figma</span></li>
+					</ul>
+				</section>
+
+				<!--soft skills section-->
+				<section class="soft-skills-section">
+					<h2 class="sidebar-title">Soft Skills</h2>
+					<ul class="soft-skills-list">
+						<li class="soft-skills-item"><span class="soft-skills-item-text">Quick learner</span></li>
+						<li class="soft-skills-item"><span class="soft-skills-item-text">Sociable</span></li>
+						<li class="soft-skills-item"><span class="soft-skills-item-text">Responsible</span></li>
+						<li class="soft-skills-item"><span class="soft-skills-item-text">Teamwork</span></li>
+					</ul>
+				</section>
+
+				<!--Languages section-->
+				<section class="languages-section">
+					<h2 class="sidebar-title">Languages</h2>
+					<ul class="languages-list">
+						<li class="languages-item"><span class="languages-item-text">Ukrainian - native speaker</span></li>
+						<li class="languages-item"><span class="languages-item-text">Russian - native speaker</span></li>
+						<li class="languages-item"><span class="languages-item-text">English - A2 (B1 in proccess)</span></li>
+					</ul>
+				</section>
+
+			</aside>
+		</main>
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="footer-container-item">
+					<div class="footer-item">
+						<a href="https://github.com/DimFonis" target="_blank" class="footer-item-github"><img
+								src="./img/github_ico.svg" alt="github_icon" class="github-icon"></a>
+					</div>
+					<div class="footer-date">
+						<p class="date">2022</p>
+					</div>
+					<div class="footer-item">
+						<a href="https://rs.school/js/" target="_blank" class="footer-item-rss"><img
+								src="./img/rs_school_js.svg" alt="rsschool_icon" class="rss-ico"></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
 </html>
