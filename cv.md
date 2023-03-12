@@ -1,3 +1,5 @@
+![my foto](./img/IMG_2.jpg)
+
 # **Dmitriy Plastun**
 
 # Contacts
